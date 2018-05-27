@@ -73,7 +73,7 @@ public class App {
 	public void generateFileList(File node) {
 
 		// add file only
-		if (node.isFile()) {
+		if (node.isFile() && node.getName().endsWith(".pdf")) {
 			fileList.add(node.getAbsolutePath());
 		}
 
